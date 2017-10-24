@@ -1,0 +1,47 @@
+.list_prod {
+    border-radius: .28571429rem;
+    box-shadow: 0 0 0 1px rgba(34,36,38,.22) inset, 0 0 0 0 transparent;
+    margin: 1em 0;
+    background: #f8f8f9;
+    padding: 1em 1.5em;
+}
+
+.field__button {
+    background: #5248a8;
+    line-height: 25px;
+    color: #fff;
+    margin: 5px;
+    width: 30px;
+    height: 30px;
+    vertical-align: middle;
+    border-radius: 4px;
+    text-align: center;
+    font-size: 32px;
+    cursor: pointer;
+    display: inline-block;
+}
+
+.field__item {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.field__item *{
+    vertical-align: middle;
+}
+
+.field__item .field__button-add_item{
+    display: inline-block;
+}
+
+.field__item .field__input, .field__item .field__button-delete_item{
+    display: none;
+}
+
+.field__item.active .field__button-add_item{
+    display: none;
+}
+
+.field__item.active .field__input, .field__item.active .field__button-delete_item{
+    display: inline-block;
+}

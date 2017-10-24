@@ -1,0 +1,22 @@
+<html>
+<head>
+    <title>Field</title>
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/field.js"></script>
+</head>
+<body>
+    <div id="container"></div>
+    <script>
+        var field = new Field({
+            'container': '#container',
+            'parentSelector': '.list_prod'
+        }, [
+            '<textarea rows="2" name="ccomment" placeholder="Comment" required></textarea>',
+            '<input type="text" name="employee" required/>',
+            '<div style="width: 40px; height: 40px; background: red;"></div>'
+        ]);
+
+        field.render();
+    </script>
+</body>
+</html>
